@@ -18,17 +18,16 @@ function whileLoop(n){
   {console.log(n--)}
   return "done"
 }
+var i=-1
 
-
-function maybeTrue() {
-  return Math.random() >= 0.5
-}
-function doWhileLoop(array){
-do {
-  array.pop()
-} while (array.length>0 && maybeTrue())
-return array
+function incrementVariable() {
+  i = i + 1;
+  return i;
 }
 
-do_while_arr = ['a','b','c'];
-console.log(doWhileLoop(do_while_arr))
+function doWhileLoop(num) {
+  do {
+    console.log('I run once regardless')
+  }
+  while (incrementVariable()<num)
+} 
