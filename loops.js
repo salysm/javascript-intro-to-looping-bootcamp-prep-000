@@ -17,15 +17,15 @@ function whileLoop(n) {
     }
     return "done";
   }
-
-function doWhileLoop(array) {
-  function maybeTrue() {
-    return Math.random() >= 0.5
-  }
-
-  do {
-   console.log(array);
-  } while (array.length > 10 && maybeTrue());
-    return array;
+function maybeTrue() {
+  return Math.random() >= 0.5
+}
+function doWhileLoop(array){
+do {
+  array.pop()
+} while (array.length>0 && maybeTrue())
+return array
 }
 
+do_while_arr = ['a','b','c'];
+console.log(doWhileLoop(do_while_arr))
