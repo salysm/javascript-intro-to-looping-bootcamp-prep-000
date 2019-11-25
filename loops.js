@@ -19,7 +19,7 @@ function maybeTrue() {
 
 function doWhileLoop(array) {
   do {
-   array = array.pop('I run once regardless');
+   console.log('I run once regardless');
     return array;
   } while ( array.length > 0 && maybeTrue() );
 }
