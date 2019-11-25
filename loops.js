@@ -18,7 +18,13 @@ function whileLoop(n) {
     return "done";
   }
 
-function doWhileLoop(array) {
-  function maybeTrue() {
-    return Math.random() >= 0.5
-  }}
+var i = 0;
+ 
+function incrementVariable() {
+  i = i + 1;
+  return i;
+}
+ 
+do {
+  console.log("doo-bee-doo-bee-doo");
+} while (incrementVariable() < 5);
